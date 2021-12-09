@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Pasos Para Poner en Funcionamiento.
+
+    1. git clone https://github.com/reyescb/PInterfell.git
+    2. Modificar archivo .env y colocar el nombre de la base de datos en MySql
+    3. npm install
+    4. composer update
+    5. php artisan migrate
+    6. sudo chmod 777 storage/ -R
+    7. sudo chmod 777 bootstrap/ -R
+    8. php artisan key:generate
+    9. Entrar en la ruta según el nombre del proyecto http://localhost/pinterfell/public/users
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
