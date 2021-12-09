@@ -18,6 +18,7 @@
 7. sudo chmod 777 bootstrap/ -R
 8. php artisan key:generate
 9. Entrar en la ruta según el nombre del proyecto http://localhost/pinterfell/public/users
+10. Se anexa a la raiz archivo para Postman pinterfell.postman_collection.json
 
 
 ## About Laravel
