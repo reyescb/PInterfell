@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "2b8d711b-3444-4f1f-9290-8eebe32fb14d",
+		"name": "Amoba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users + Erased",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users CreatedAt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromDate\": \"2021-12-11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/createdAt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"createdAt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users betweenCreatedAt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromDate\":\"2021-12-11\",\n    \"toDate\":\"2021-12-13\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/betweenCreatedAt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"betweenCreatedAt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n     \"first_name\": \"Nombre\",\n     \"last_name\": \"Apellido\",\n     \"description\": \"Usuario Descripción\",\n     \"ima_profile\": \"ruta_imagen\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Nombre\",\n    \"last_name\": \"Apellido\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/profiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"profiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ima_profile\": \"ruta_imagen3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectos/amoba/public/api/profiles/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectos",
+						"amoba",
+						"public",
+						"api",
+						"profiles",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
